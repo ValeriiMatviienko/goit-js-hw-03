@@ -4,7 +4,7 @@ const findBestEmployee = function (employees) {
   let name = '';
   let salary = Math.max(...Object.values(employees));
   for (let item in employees) {
-    if (employees[item] == salary) {
+    if (employees[item] === salary) {
       name = item;
     }
   }
